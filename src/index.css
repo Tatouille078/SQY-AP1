@@ -5,6 +5,36 @@
 @tailwind components;
 @tailwind utilities;
 
+input:focus {
+    outline: none;
+    border: none;
+}
+
+.teuffi {
+    position: relative;
+    padding: 10px; /* Espace interne */
+    border-radius: 16px; /* Facultatif, coins arrondis */
+    z-index: 1; /* S'assurer que le contenu est au-dessus */
+    background: none; /* Couleur de fond du contenu */
+  }
+  
+  .teuffi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Derrière le contenu */
+    background: linear-gradient(90deg, #2690d6, #05173d); /* Dégradé */
+    border-radius: 16px; /* Correspond à l'élément parent */
+    padding: 4px; /* Épaisseur de la bordure */
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude; /* Laisser la bordure uniquement */
+  }
+
 .nova {
     font-family: "Nova Round", serif;
     font-weight: 400;
@@ -16,4 +46,3 @@
     font-weight: 400;
     font-style: normal;
 }
-  
