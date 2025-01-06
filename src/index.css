@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nova {
+    font-family: "Nova Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
