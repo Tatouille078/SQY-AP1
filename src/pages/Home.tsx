@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <>
-      <img src={bg} alt="" className='-z-10 fixed' />
+      <img src={bg} alt="" className='-z-10 fixed background' />
       <Header />
       <div className='montserrat ml-32 mt-[30vh] flex justify-start flex-wrap text-white'>
         <h1 className='w-full flex flex-wrap justify-start self-start text-7xl'>Un Petit

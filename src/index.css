@@ -35,6 +35,11 @@ input:focus {
     mask-composite: exclude; /* Laisser la bordure uniquement */
   }
 
+.background {
+  animation: backback linear forwards;
+  animation-timeline: scroll();
+}
+
 .nova {
     font-family: "Nova Round", serif;
     font-weight: 400;
@@ -45,4 +50,14 @@ input:focus {
     font-family: "Montserrat Alternates", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+@keyframes backback {
+  to {
+    transform: translateY(0);
+  }
+  from {
+    filter: brightness(90%) contrast(120%);
+    transform: translateY(-10%);
+  }
 }

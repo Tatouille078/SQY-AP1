@@ -15,18 +15,26 @@ const Header: React.FC = () => {
           <Link to="/" className='text-3xl nova'>Colibri</Link>
           <img src={Logo} alt="Icon" className="w-6 h-6 mx-4" />
           <div className='h-full flex justify-center items-end group border-x border-transparent hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
-            <HiShoppingBag className='w-full h-full py-3 px-6 border-b-2 group-hover:border-cyan-500 border-transparent transition-all' />
+            <div className='w-full h-full border-b-2 group-hover:border-cyan-500 border-transparent transition-all'>
+              <HiShoppingBag className='w-full h-full py-3 px-6 group-hover:scale-105 group-hover:-rotate-[25deg] transition-all' />
+            </div>
           </div>
           <div className='h-full flex justify-center items-end group border-x border-transparent hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
-            <FiSearch className='w-full h-full py-3 px-6 border-b-2 group-hover:border-cyan-500 border-transparent transition-all' />
+            <div className='w-full h-full border-b-2 group-hover:border-cyan-500 border-transparent transition-all'>
+              <FiSearch className='w-full h-full py-3 px-6 group-hover:scale-105 group-hover:-rotate-[25deg] transition-all' />
+            </div>
           </div>
         </div>
         <div className='h-full text-white flex items-center text-center mx-8'>
-          <div className='h-full flex justify-center items-end group border-x border-transparent hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
-            <PiShoppingCartBold className='w-full h-full py-3 px-6 border-b-2 group-hover:border-cyan-500 border-transparent transition-all' />
+        <div className='h-full flex justify-center items-end group border-x border-transparent hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
+            <div className='w-full h-full border-b-2 group-hover:border-cyan-500 border-transparent transition-all'>
+              <PiShoppingCartBold className='w-full h-full py-3 px-6 group-hover:scale-105 group-hover:-rotate-[25deg] transition-all' />
+            </div>
           </div>
-          <div className='h-full flex justify-center items-end group border-x border-transparent mr-4 hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
-            <TbSettings className='w-full h-full py-3 px-6 border-b-2 group-hover:border-cyan-500 border-transparent transition-all' />
+          <div className='h-full flex justify-center items-end group border-x border-transparent hover:border-cyan-800 hover:bg-gradient-to-t from-cyan-700 to-gray-900 transition-all'>
+            <div className='w-full h-full border-b-2 group-hover:border-cyan-500 border-transparent transition-all'>
+              <TbSettings className='w-full h-full py-3 px-6 group-hover:scale-105 group-hover:-rotate-90 transition-all' />
+            </div>
           </div>
           <h2 className='rounded-full min-w-32 px-4 pb-1 bg-gradient-to-r  from-[#045874] to-[#0E1730]'>Espace Abonné</h2>
         </div>
